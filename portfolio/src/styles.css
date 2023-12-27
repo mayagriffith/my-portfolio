@@ -1,0 +1,38 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer utilities {
+    .animation-delay-2000 {
+      animation-delay: 2s;
+    }
+    .animation-delay-4000 {
+      animation-delay: 4s;
+    }
+  }
+
+  .gradient-mask {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px; /* Adjust the height as needed */
+    background: linear-gradient(rgba(255, 255, 255, 0), white); /* Adjust the gradient colors and opacity as needed */
+  }
+
+
+  .bring-up{
+    margin-top: -3rem;
+  }
+
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-4px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(4px);
+    }
+  }
