@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import Navbar from './Navbar';
 import Home from './Home';
@@ -6,6 +5,8 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 import './styles.css';
+import React, { useEffect } from 'react';
+
 
 function App() {
   const scrollToSection = (sectionId) => {
@@ -14,6 +15,10 @@ function App() {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  useEffect(() => {
+    document.title = 'Maya Griffith';
+}, []); // The empty array ensures this runs once after the initial render
+
 
   return (
     <div>

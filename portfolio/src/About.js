@@ -97,10 +97,11 @@ function About() {
 
   return (
     <div className="pt-20">
-      <h1 className="ml-[5%] mb-10 text-4xl font-bold text-pink-700">Experience</h1>
-      <div className="flex flex-col md:flex-row">
-        <div className="flex h-auto pd:0 md:h-screen w-full ml-[0%] md:w-1/4 sm:pl-[0%] md:w-3/5 md:r-[10%] pl-10 pr-10">
+      <h1 className="ml-[40%] sm:ml-[46%] mb-10 text-4xl font-bold text-pink-700">About</h1>
+      <div className="flex flex-col-reverse md:flex-row">
+        <div className="flex h-auto pd:0 md:h-screen w-full ml-[0%] md:w-1/4 sm:pl-[0%] md:w-3/5 md:r-[10%] pl-5 pr-5 pb-10 md:pl-10">
           {/* Left Side (Tabs) */}
+
           <Tab.Group>
             <Tab.List className="flex flex-col space-y-2 bg-gray-200 p-4 sm:ml-24 md:ml-0 h-auto md:h-3/5 max-w-content whitespace-nowrap">
               {experienceData.map((experience, index) => (
@@ -108,7 +109,7 @@ function About() {
                   key={index}
                   className={`relative text-left ${
                     activeTab === index
-                      ? 'text-pink-500 hover:text-pink-500 focus:outline-none focus:ring-0 pb-2'
+                      ? 'text-pink-500 hover:text-pink-500 focus:outline-none focus:ring-0 pb-2 font-bold'
                       : 'text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-0 pb-2'
                   } focus:border-blue-300 transition duration-150 ease-in-out`}
                   onClick={() => setActiveTab(index)}
@@ -125,14 +126,14 @@ function About() {
             </Tab.List>
 
             {/* Left Side (Content) */}
-            <Tab.Panels className="flex-grow p-4 bg-pink-200 h-auto sm:h-3/5">
+            <Tab.Panels className="flex-grow p-4 bg-gray-100 h-auto sm:h-3/5">
               {experienceData.map((experience, index) => (
                 <Tab.Panel key={index}>
                   <div>
-                    <h2 className="text-xl font-bold text-pink-500 mb-2">
+                    <h2 className="text-xl font-bold text-pink-500 mb-0">
                       {experience.jobTitle}
                     </h2>
-                    <p className="text-gray-700 mb-2">{experience.company}</p>
+                    <p className="text-gray-700 mb-0 font-medium">{experience.company}</p>
                     <p className="text-gray-600 mb-4">{experience.dates}</p>
                   </div>
                   <ul className="list-disc list-inside">
@@ -155,10 +156,10 @@ function About() {
         </div>
 
         {/* Right Side (Photo Section) */}
-        <div className="w-full md:w-1/3 mt-[3%] md:pl-[5%]">
+        <div className="w-full md:w-1/3 mt-[0%] md:ml-[3%] pb-[10%] pl-[3%] pr-[3%]">
           <div className="flex flex-col items-center">
             <img src="/maya-baby.png" alt="Maya Baby" className="h-72 w-auto" />
-            <p className="text-gray-700 text-center text-sm mt-4">Computers have fascinated me since a young age. I loved the creativity and problem-solving that it afforded me. During college, I found my passion for building fast and beautiful software.</p>
+            <p className="text-gray-700 text-center text-sm mt-4">Technology spoke to me at a young age. I loved the creativity and problem-solving that it offered me. During college, I found my passion for building fast and beautiful software. Graduating with an MS in Computer Science in May 2024.</p>
           </div>
         </div>
       </div>
