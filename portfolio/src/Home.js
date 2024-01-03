@@ -33,7 +33,7 @@ const Home = () => {
           </div>
         </div>
         <a
-          href="/path/to/your/resume.pdf"
+          href="/Griffith_Maya_Resume.pdf"
           download
           className="sm:m-0 font-bold mt-2 px-6 md:px-12 py-4 bg-pink-500 hover:bg-pink-600 text-white rounded-full inline-flex items-center"
         >
