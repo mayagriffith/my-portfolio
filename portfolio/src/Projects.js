@@ -5,7 +5,7 @@ const projectsData = [
   {
     id: 1,
     title: 'My Bots',
-    description: 'Created for an Evolutionary Robotics Class. Used a python physics simulator to create a robot. Used different numbers of hidden neurons to determine how best the evolutionary algorithm could create a robot that could walk.',
+    description: 'Created for an Evolutionary Robotics Class at UVM. Used a python physics simulator to create a robot. Used different numbers of hidden neurons to determine how best the evolutionary algorithm could create a robot that could walk.',
     imageUrl: '/robot.png',
     largeImageUrl: '/robot.png',
     skills: ['Python', 'Evolutionary Algorithms', 'Neural Networks', 'Robotics', 'Physics'],
@@ -14,20 +14,20 @@ const projectsData = [
   {
     id: 2,
     title: 'HCI-Friendly Language Learning App',
-    description: 'Description for Project 1.',
+    description: 'Created a mockup of a language learning app using human computer interaction concepts. Utilized personas, user stories, wireframes, and focus groups to create a user-friendly interface.',
     imageUrl: '/language.png',
     largeImageUrl: '/language.png',
-    skills: ['React', 'Node.js', 'CSS'],
-    link: 'https://example.com/project1',
+    skills: ['Flask', 'Python', 'WCAG', 'HTML', 'CSS', 'Javascript', 'Web Development', 'Design', 'Accessibility'],
+    link: 'https://github.com/alynkirscht/hciFinalProject',
   },
   {
     id: 3,
     title: 'SQL POS System',
-    description: 'Description for Project 1.',
+    description: 'A command line simulation of a Point of Sale system (from a pet costume store) that uses SQL to store and retrieve data, and do calculations on this data. Created for a Database Systems class at UVM.',
     imageUrl: '/pet.png',
     largeImageUrl: '/pet.png',
-    skills: ['SQL', 'Databases', 'CSS'],
-    link: 'https://example.com/project1',
+    skills: ['SQL', 'Databases', 'CSS', 'Software Engineering'],
+    link: 'https://github.com/mayagriffith/POS-pet-store',
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const projectsData = [
     imageUrl: '/leaf3.png',
     largeImageUrl: '/leaf3.png',
     skills: ['AI', 'GANs', 'pytorch', 'python', 'training', 'research'],
-    link: 'https://example.com/project1',
+    link: 'https://docs.google.com/presentation/d/1RSefRpBTymY_G6ExXZa4Z4gqJKn0t-aY1kjPQaWF6uU/edit?usp=sharing',
   },
   {
     id: 5,
@@ -44,16 +44,16 @@ const projectsData = [
     description: 'Description for Project 1.',
     imageUrl: '/crypto.png',
     largeImageUrl: '/crypto.png',
-    skills: ['Cryptocurrency', 'Python', 'Blockchain'],
+    skills: ['Cryptocurrency', 'Python', 'Blockchain', 'Software Engineering', 'Jupyter Notebook'],
     link: 'https://www.youtube.com/watch?v=TQdrEWTbIS0&t=24s&ab_channel=MayaGriffith',
   },
   {
     id: 6,
     title: 'SWiCS Website',
-    description: 'Description for Project 1.',
+    description: 'Website for the Society of Women in Computer Science at UVM.',
     imageUrl: '/swics.png',
     largeImageUrl: '/swics.png',
-    skills: ['SQL', 'Databases', 'CSS'],
+    skills: ['HTML', 'PHP', 'CSS', 'Web Development', 'Design', 'Figma'],
     link: 'https://example.com/project1',
   },
   {
@@ -81,7 +81,7 @@ const projectsData = [
     imageUrl: '/geometry.png',
     largeImageUrl: '/geometry.png',
     skills: ['Python', 'Python Arcade', 'Software ', 'Game Development', 'Graphics'],
-    link: 'https://www.youtube.com/watch?v=ahmDUK0I_Fo',
+    link: 'https://docs.google.com/presentation/d/1MZ_TnS0jXfVr9viUmCy_gYqzmpUY356LfjLOLnmO-Z8/edit?usp=sharing',
   },
 ];
 
@@ -117,7 +117,7 @@ const Projects = () => {
 
       {selectedProject && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-500 bg-opacity-50 z-50">
-          <div className="bg-white p-8 relative w-1/2">
+          <div className="bg-white p-8 relative w-1/2 xl:w-[40%]">
             <button className="absolute top-2 right-2 text-xl" onClick={handleProjectClose}>
               &times;
             </button>
