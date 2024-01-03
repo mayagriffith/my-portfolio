@@ -65,11 +65,13 @@ const Contact = () => {
         <a href="https://www.instagram.com/mayagriffith/" target="_blank" rel="noopener noreferrer" className="text-pink-700 hover:text-pink-500 mx-2">
           <FaInstagram size={24} />
         </a>
-      </div>
+        </div>
+       
         {/* Other content */}
-        <div className="pt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="pt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="pt-2 flex flex-col md:flex-row w-[110%] md:w-[210%]">
           {/* Name input */}
-          <div className="mb-4 w-full">
+          <div className="w-full md:pr-[5%]">
             <label htmlFor="name" className="block text-lg text-gray-600">Name</label>
             <input
               type="text"
@@ -84,7 +86,7 @@ const Contact = () => {
           </div>
 
           {/* Email input */}
-          <div className="mb-4 w-full">
+          <div className="mb-4 w-full mr-0 xl:mr-4">
             <label htmlFor="email" className="block text-lg text-gray-600">Email</label>
             <input
               type="email"
@@ -96,10 +98,11 @@ const Contact = () => {
               required
             />
             {formErrors.email && <p className="text-red-500">{formErrors.email}</p>}
-          </div>
+            </div>
+            </div>
 
           {/* Message input */}
-          <div className="col-span-2 mb-4">
+          <div className="col-span-2 mb-4 w-full">
             <label htmlFor="message" className="block text-lg text-gray-600">Message</label>
             <textarea
               id="message"
@@ -116,7 +119,7 @@ const Contact = () => {
 
         <button
           type="submit"
-          className="bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded-full text-lg font-semibold inline-block mb-8 justify-center w-1/2"
+          className="bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded-full text-lg font-semibold inline-block mb-8 justify-center w-1/2 ml-[25%]"
         >
           Submit
         </button>
